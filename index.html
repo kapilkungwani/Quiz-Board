@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="start">
+        <div class="inner-cnt">
+            <img id="img" src="./images/logo.png" alt="webd-image">
+            <h1>Quiz Website</h1>
+            <h2 class="tagLine">Ready to prove that you're a developer?</h2>
+            <div class="details">
+                Enter your Name
+                <input type="text" name="name" id="name" placeholder="Kapil Kungwani">
+            </div>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+    </div>
+    <div class="container" id="question-cnt">
+        <div class="inner-div">
+            <h2 class="question">Questions</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="ans1">
+                    <label for="ans1" id="option1">options</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="ans2">
+                    <label for="ans2" id="option2">options</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="ans3">
+                    <label for="ans3" id="option3">options</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="ans4">
+                    <label for="ans4" id="option4">options</label>
+                </li>
+            </ul>
+            <button id="submit">Next</button>
+        </div>
+    </div>
+    <div class="container" id="score-cnt">
+        <div class="inner-score">
+            <div class="scoreDisplay" id="scoreDisplay">
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <footer>
+            Made with ❤️ by Kapil Kungwani
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
