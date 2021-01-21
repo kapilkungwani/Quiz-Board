@@ -58,7 +58,7 @@ const quizDB = [
         ans: "ans3"
     },
     {
-        question: "Q8: Which of the following is not a browser ?",
+        question: "Q8: Which of the following is not a browser?",
         a: "Microsofts Bing",
         b: "Netscape Navigator",
         c: "Mozilla Firefox",
