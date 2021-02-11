@@ -1,3 +1,4 @@
+// Quiz Questions Database
 const quizDB = [
     {
         question: "Q1: HTML is what type of language ?",
@@ -86,6 +87,7 @@ const quizDB = [
 
 ];
 
+// HTML DOM Methods
 const startbtn = document.querySelector("#start-btn");
 const question = document.querySelector(".question");
 const option1 = document.querySelector("#option1");
@@ -99,6 +101,7 @@ const answers = document.querySelectorAll(".answer");
 
 let questionCount = 0, score = 0;
 
+// Starting Quiz
 const startquiz = () => {
     startbtn.addEventListener("click", () => {
         document.getElementById("start").style.display = "none";
@@ -109,7 +112,7 @@ const startquiz = () => {
 
 };
 
-
+// Display Questions
 const startquestionload = () => {
     //console.log(quizDB[0].question);
     // question.innerHTML=quizDB[0].question;
@@ -123,15 +126,17 @@ const startquestionload = () => {
     option4.innerHTML = questionList.d;
 };
 
-
+// Function to start Quiz
 startquiz();
 
+// Deselect Option after every question
 const deselectOption = () => {
     answers.forEach((curOptionSelect) => {
         curOptionSelect.checked = false;
     });
 };
 
+// Function for checking correct answer
 const getCheckAnswer = () => {
     let answer;
     //checkoptionSelectfromoption1tolastoption
@@ -143,7 +148,7 @@ const getCheckAnswer = () => {
     return answer;
 };
 
-
+// Submitting Quiz
 submit.addEventListener("click", () => {
     const checker = getCheckAnswer();
     console.log(checker);
@@ -156,10 +161,12 @@ submit.addEventListener("click", () => {
     if (questionCount < quizDB.length - 1)
         startquestionload();
     else if (questionCount < quizDB.length) {
+        // At last question the Submit button appears in place of Next button
         submit.innerHTML = "submit";
         startquestionload();
     }
     else {
+        // Displaying Score
         scoreDisplay.innerHTML = `
         <img src="./images/crown.png" alt="crown" id="crown">
         <h1>Congratulations! 🌟 <br>${document.getElementById("name").value}</h1>
