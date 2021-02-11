@@ -1,5 +1,7 @@
+/* Importing Google Font - Poppins  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
+/* Selecting all elements on the webpage */
 *{
     margin: 0;
     padding: 0;
