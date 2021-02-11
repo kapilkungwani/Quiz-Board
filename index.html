@@ -9,21 +9,29 @@
 </head>
 
 <body>
+    <!-- Container for starting Quiz -->
     <div class="container" id="start">
+        <!-- Inner Container -->
         <div class="inner-cnt">
+            <!-- WebD Logo -->
             <img id="img" src="./images/logo.png" alt="webd-image">
             <h1>Quiz Website</h1>
             <h2 class="tagLine">Ready to prove that you're a developer?</h2>
+            <!-- Personal Details -->
             <div class="details">
                 Enter your Name
                 <input type="text" name="name" id="name" placeholder="Kapil Kungwani">
             </div>
+            <!-- Start Quiz -->
             <button id="start-btn">Start Quiz</button>
         </div>
     </div>
+    <!-- Container for displaying Questions -->
     <div class="container" id="question-cnt">
+        <!-- Inner Container -->
         <div class="inner-div">
             <h2 class="question">Questions</h2>
+            <!-- Options -->
             <ul>
                 <li>
                     <input type="radio" name="answer" class="answer" id="ans1">
@@ -42,9 +50,11 @@
                     <label for="ans4" id="option4">options</label>
                 </li>
             </ul>
+            <!-- Button to move on Next Questions -->
             <button id="submit">Next</button>
         </div>
     </div>
+    <!-- Display Score -->
     <div class="container" id="score-cnt">
         <div class="inner-score">
             <div class="scoreDisplay" id="scoreDisplay">
